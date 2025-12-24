@@ -12,3 +12,11 @@ class RegionOut(BaseModel):
     class Config:
         orm_mode = True
 
+
+class ItemSearchOut(BaseModel):
+    id: str | None = None
+    title: str | None = None
+    price: str | None = None
+    region: str | None = None
+    image_url: str | None = None
+    url: str | None = None
